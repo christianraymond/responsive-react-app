@@ -1,6 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import Tabs from './Tabs';
 
 function Cards() {
   return (
@@ -11,8 +12,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-9.jpg'
-              text='Lorem Ipsum is simply dummy text of the printing'
-              label='Feed 60 kids for a month'
+              text={<Tabs/>}
               path='/popular'
             />
             <CardItem

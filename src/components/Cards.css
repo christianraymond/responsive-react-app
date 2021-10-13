@@ -7,7 +7,7 @@ h1 {
 }
 
 .cards__container {
-  display: flex;
+  /* display: flex; */
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
@@ -89,12 +89,13 @@ h1 {
 }
 
 .cards__item__info {
-  padding: 20px 30px 30px;
+  padding: 20px 30px 6px;
+  background: ghostwhite;
+  border: 1px #ddd solid;
 }
 
 .cards__item__text {
   color: #252e48;
-  font-size: 18px;
   line-height: 24px;
 }
 
