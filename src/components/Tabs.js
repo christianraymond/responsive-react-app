@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
+import Popular from '../components/pages/Popular'
+import EndDate from '../components/pages/EndDate'
 import './Tabs.css';
-import Newest from '../components/pages/Newest'
 
 const TAB_DATA = [
-   ["Newest", ],
-   ["Popular", "Curabitur in augue erat. Vestibulum in fermentum ante, sit amet consectetur neque. Maecenas tempor nisl sollicitudin, blandit sapien ut, fermentum metus."],
-   ["End Date", "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam aliquam, nisi vitae maximus tincidunt, justo leo auctor neque, et fermentum ante libero ac libero."],
+   ["Newest" ],
+   ["Popular", <Popular/>],
+   ["End Date", <EndDate/>],
   ];
 
 export default class Tabs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 0
+      active: 0,
     }
   }
-  
   clickHandler = (e) => {
     this.setState({
       active: parseInt(e.currentTarget.attributes.num.value)

@@ -7,7 +7,6 @@ h1 {
 }
 
 .cards__container {
-  /* display: flex; */
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
@@ -99,6 +98,107 @@ h1 {
   line-height: 24px;
 }
 
+#some-box {background:#fff;padding:40px 0px 80px;}
+#some-box p {text-transform: uppercase;color: gainsboro; font-size: small;}
+#some-box h1 {text-align:center;}
+#some-box h3 {font-size:18px; color: rgba(5, 5, 5, 0.6);}
+#some-box a {  color: rgba(19, 18, 18, 0.6);text-decoration:none;display:block;font-weight:bold; font-size: 13px;}
+#some-box a:hover {color:#8E7BB2;}
+
+article.row {width:100%;max-width:800px;margin:0 auto;padding:45px 0;}
+article.row div {width:49.4%;display:inline-block;position:relative;border:1px solid white;}
+
+article.row {
+  border:1px solid white;
+}
+#idea-one img,
+#idea-two img,
+#idea-three img {
+  position:absolute;
+  bottom:-20px;
+  left:35px;
+  border-radius:50%;
+	background:black;
+	height:120px;
+	width:120px;
+}
+.donation-desc {
+  position:absolute;
+  left:-35px;
+  bottom: 15px;
+}
+@media only screen and (max-width: 360px) {
+  #idea-one img,
+#idea-two img,
+#idea-three img {
+  position:absolute;
+  bottom:-20px;
+  left:10px;
+  border-radius:50%;
+	background:black;
+	height:120px;
+	width:120px;
+}
+.donation-desc {
+  position:absolute;
+  left:-35px;
+  bottom: 15px;
+}
+.fade_rule {
+  height: 1px;
+  background-color: #f5e5e5;
+}
+}
+@media only screen and (max-width: 390px) {
+ #idea-one img,
+ #idea-two img,
+ #idea-three img {
+  position:absolute;
+  bottom:-20px;
+  left:10px;
+  border-radius:50%;
+	background:black;
+	height:100px;
+	width:100px;
+}
+.donation-desc {
+  position:absolute;
+  left:-35px;
+  bottom: 15px;
+}
+#some-box h3 {font-size:16px; color: rgba(5, 5, 5, 0.6);}
+#some-box p {text-transform: uppercase;color: gainsboro; font-size: x-small;}
+#some-box a {  color: rgba(19, 18, 18, 0.6);text-decoration:none;display:block;font-weight:bold; font-size: 12px;}
+.fade_rule {
+  height: 1px;
+  background-color: #f5e5e5;
+}
+}
+@media only screen and (max-width: 320px) {
+ #idea-one img,
+ #idea-two img,
+ #idea-three img {
+  position:absolute;
+  bottom:-20px;
+  left:10px;
+  border-radius:50%;
+	background:black;
+	height:100px;
+	width:100px;
+}
+.donation-desc {
+  position:absolute;
+  left:-15px;
+  bottom: 15px;
+}
+#some-box h3 {font-size:14px; color: rgba(5, 5, 5, 0.6);}
+#some-box p {text-transform: uppercase;color: gainsboro; font-size: x-small;}
+#some-box a {  color: rgba(19, 18, 18, 0.6);text-decoration:none;display:block;font-weight:bold; font-size: 10px;}
+.fade_rule {
+  height: 1px;
+  background-color: #f5e5e5;
+}
+}
 @media screen and (max-width: 1280px) {
   h1 {
     text-align: left;
@@ -138,4 +238,17 @@ h1 {
   .cards__item {
     margin-bottom: 2rem;
   }
+}
+
+.CircularProgressbar-path {
+  stroke: red;
+}
+.CircularProgressbar-trail {
+  stroke: gray;
+}
+.CircularProgressbar-text {
+  fill: yellow;
+}
+.CircularProgressbar-background {
+  fill: green;
 }

@@ -1,9 +1,13 @@
 import React from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 import './Cards.css';
 import CardItem from './CardItem';
 import Tabs from './Tabs';
 
-function Cards() {
+const Cards = () => {
+  const percentage = 16;
   return (
     <div className='cards'>
       <h1>Featured Charity</h1>
@@ -12,7 +16,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-9.jpg'
-              text={<Tabs/>}
+              text={<Tabs />}
               path='/popular'
             />
             <CardItem
@@ -22,32 +26,47 @@ function Cards() {
               path='/popular'
             />
           </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/holding-box.jpg'
-              text='Lorem Ipsum is simply dummy text of the printing and typesetting'
-              label='Feed-a-child'
-              path='/popular'
-            />
-            <CardItem
-              src='images/charity-hands.jpg'
-              text='Lorem Ipsum is simply dummy text of the printing and typesetting'
-              label='Drought Fund'
-              path='/newest'
-            />
-             <CardItem
-              src='images/img-2.jpg'
-              text='Lorem Ipsum is simply dummy text of the printing and typesetting'
-              label='Sponsor a farm'
-              path='/popular'
-            />
-              <CardItem
-              src='images/img-3.jpg'
-              text='Lorem Ipsum is simply dummy text of the printing and typesetting'
-              label='Buy 5000 Blankets'
-              path='/end-date'
-            />
-          </ul>
+          <div id="some-box">
+            <article class="row" id="idea-one">
+              <div><img src="images/holding-box.jpg" /></div>
+              <div className="donation-desc">
+                <h3>Feed 60 Kids for a month</h3>
+                <p>Raising R30 000.00 by 21 Aug.</p>
+                <a href="">Feed-a-child, Cape Town</a>
+              </div>
+            </article>
+            <div class="fade_rule"></div>
+
+            <article class="row" id="idea-two">
+              <div><img src="images/charity-hands.jpg" /></div>
+              <div className="donation-desc">
+                <h3>Buy 5 000 Blankets</h3>
+                <p>Raising R8 000.00 by 21 Aug</p>
+                <a href="">Drought Fund, Durban</a>
+              </div>
+            </article>
+            <div class="fade_rule"></div>
+
+            <article class="row" id="idea-three">
+              <div><img src="images/img-2.jpg" /></div>
+              <div className="donation-desc">
+                <h3>Sponsor a farm with 1000 litres of water</h3>
+                <p>Raising R30 000.00 by 21 Aug.</p>
+                <a href="">SPCA, Johannesburg</a>
+              </div>
+            </article>
+            <div class="fade_rule"></div>
+
+            <article class="row" id="idea-two">
+              <div><img src="images/img-3.jpg" /></div>
+              <div className="donation-desc">
+                <h3>Buy 5 000 Blankets</h3>
+                <p>Raising R8 000.00 by 21 Aug</p>
+                <a href="#">Drought Fund, Durban</a>
+              </div>
+            </article>
+
+          </div>
         </div>
       </div>
     </div>

@@ -6,8 +6,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Popular from './components/pages/Popular';
 import Newest from './components/pages/Newest';
 import EndDate from './components/pages/EndDate';
+import Tabs from './components/Tabs';
 
-function App() {
+const App = (props) => {
+  const { data } = props;
   return (
     <>
       <Router>
