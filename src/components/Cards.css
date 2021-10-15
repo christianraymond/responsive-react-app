@@ -118,9 +118,9 @@ article.row {
   bottom:-20px;
   left:35px;
   border-radius:50%;
-	background:black;
 	height:120px;
 	width:120px;
+  border:solid 8px #cccccc;
 }
 .donation-desc {
   position:absolute;
