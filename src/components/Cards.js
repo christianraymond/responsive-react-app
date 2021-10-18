@@ -27,7 +27,8 @@ const Cards = () => {
             />
           </ul>
           <div id="some-box">
-            <article class="row" id="idea-one">
+           <div className="circular">
+           <article class="row" id="idea-one">
               <div><img src="images/holding-box.jpg" /></div>
               <div className="donation-desc">
                 <h3>Feed 60 Kids for a month</h3>
@@ -35,6 +36,7 @@ const Cards = () => {
                 <a href="">Feed-a-child, Cape Town</a>
               </div>
             </article>
+           </div>
             <div class="fade_rule"></div>
 
             <article class="row" id="idea-two">

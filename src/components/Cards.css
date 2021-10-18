@@ -121,7 +121,7 @@ article.row {
 	height:120px;
 	width:120px;
   border:solid 8px #cccccc;
-}
+  border-color: #cccccc darkgreen #cccccc #cccccc;}
 .donation-desc {
   position:absolute;
   left:-35px;
@@ -135,7 +135,6 @@ article.row {
   bottom:-20px;
   left:10px;
   border-radius:50%;
-	background:black;
 	height:120px;
 	width:120px;
 }
@@ -157,7 +156,6 @@ article.row {
   bottom:-20px;
   left:10px;
   border-radius:50%;
-	background:black;
 	height:100px;
 	width:100px;
 }
@@ -182,7 +180,6 @@ article.row {
   bottom:-20px;
   left:10px;
   border-radius:50%;
-	background:black;
 	height:100px;
 	width:100px;
 }
@@ -238,17 +235,4 @@ article.row {
   .cards__item {
     margin-bottom: 2rem;
   }
-}
-
-.CircularProgressbar-path {
-  stroke: red;
-}
-.CircularProgressbar-trail {
-  stroke: gray;
-}
-.CircularProgressbar-text {
-  fill: yellow;
-}
-.CircularProgressbar-background {
-  fill: green;
 }
