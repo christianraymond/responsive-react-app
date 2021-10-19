@@ -1,10 +1,10 @@
 import React from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 import './Cards.css';
 import CardItem from './CardItem';
 import Tabs from './Tabs';
+import DonationUpdator from './DonationUpdator';
 
 const Cards = () => {
   const percentage = 16;
@@ -27,16 +27,19 @@ const Cards = () => {
             />
           </ul>
           <div id="some-box">
-           <div className="circular">
-           <article class="row" id="idea-one">
-              <div><img src="images/holding-box.jpg" /></div>
-              <div className="donation-desc">
-                <h3>Feed 60 Kids for a month</h3>
-                <p>Raising R30 000.00 by 21 Aug.</p>
-                <a href="">Feed-a-child, Cape Town</a>
+            <div className="circular">
+              <article class="row" id="idea-one">
+                <div><img src="images/holding-box.jpg" /></div>
+                <div className="donation-desc">
+                  <h3>Feed 60 Kids for a month</h3>
+                  <p>Raising R30 000.00 by 21 Aug.</p>
+                  <a href="">Feed-a-child, Cape Town</a>
+                </div>
+              </article>
+              <div className="donation-updator">
+                <DonationUpdator />
               </div>
-            </article>
-           </div>
+            </div>
             <div class="fade_rule"></div>
 
             <article class="row" id="idea-two">
@@ -47,6 +50,9 @@ const Cards = () => {
                 <a href="">Drought Fund, Durban</a>
               </div>
             </article>
+            <div className="donation-updator">
+              <DonationUpdator />
+            </div>
             <div class="fade_rule"></div>
 
             <article class="row" id="idea-three">
@@ -57,6 +63,9 @@ const Cards = () => {
                 <a href="">SPCA, Johannesburg</a>
               </div>
             </article>
+            <div className="donation-updator">
+              <DonationUpdator />
+            </div>
             <div class="fade_rule"></div>
 
             <article class="row" id="idea-two">
@@ -67,6 +76,9 @@ const Cards = () => {
                 <a href="#">Drought Fund, Durban</a>
               </div>
             </article>
+            <div className="donation-updator">
+              <DonationUpdator />
+            </div>
 
           </div>
         </div>
