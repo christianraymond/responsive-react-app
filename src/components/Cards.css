@@ -115,8 +115,8 @@ article.row {
 #idea-two img,
 #idea-three img {
   position:absolute;
-  bottom:-20px;
-  left:35px;
+  bottom:-33px;
+  left:10px;
   border-radius:50%;
 	height:120px;
 	width:120px;
@@ -127,6 +127,16 @@ article.row {
   left:-35px;
   bottom: 15px;
 }
+
+@media screen and (min-width: 1280px) {
+  #idea-one img,
+#idea-two img,
+#idea-three img {
+  position:absolute;
+  left:100px;
+ }
+}
+
 @media only screen and (max-width: 360px) {
   #idea-one img,
 #idea-two img,
