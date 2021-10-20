@@ -56,13 +56,11 @@
 }
 
 .button {
-  background-color: darkgreen;
-  border-radius: 3px;
+  background-color: rgb(23, 160, 23);
   border: 1.5px solid darkgreen;
   height: 30px;
   padding: 0 3px;
   color: #fff;
-  margin-right: 4px;
   cursor: pointer;
 }
 
@@ -71,3 +69,16 @@
   color: #fff;
 }
 
+@media screen and (max-width: 960px) {
+  .progresss {
+    width: 160px;
+  }
+  .progress {
+    width: 160px;
+  }
+  .button {
+    height: 80px;
+    width: 60px;
+    padding-left: 2px;
+  }
+}
